@@ -1,0 +1,84 @@
+:root {
+  --c-primary-100: #d6ecff;
+  --c-primary-200: #add6ff;
+  --c-primary-300: #84bdff;
+  --c-primary-400: #66a7ff;
+  --c-primary-500: #3382ff;
+  --c-primary-600: #2564db;
+  --c-primary-700: #194ab7;
+  --c-primary-800: #103393;
+  --c-primary-900: #09237a;
+  --c-success-100: #e7fdd8;
+  --c-success-200: #cafcb2;
+  --c-success-300: #a5f68a;
+  --c-success-400: #81ed6b;
+  --c-success-500: #4be23d;
+  --c-success-600: #2dc22c;
+  --c-success-700: #1ea229;
+  --c-success-800: #138325;
+  --c-success-900: #0b6c23;
+  --c-info-100: #d9f6fe;
+  --c-info-200: #b4eafe;
+  --c-info-300: #8edafe;
+  --c-info-400: #72c8fd;
+  --c-info-500: #44acfc;
+  --c-info-600: #3186d8;
+  --c-info-700: #2265b5;
+  --c-info-800: #154792;
+  --c-info-900: #0d3178;
+  --c-warning-100: #fef9d1;
+  --c-warning-200: #fef3a4;
+  --c-warning-300: #fde976;
+  --c-warning-400: #fbe054;
+  --c-warning-500: #f9d11d;
+  --c-warning-600: #d6af15;
+  --c-warning-700: #b38f0e;
+  --c-warning-800: #907009;
+  --c-warning-900: #775a05;
+  --c-danger-100: #ffebd4;
+  --c-danger-200: #ffd2aa;
+  --c-danger-300: #ffb37f;
+  --c-danger-400: #ff9560;
+  --c-danger-500: #ff632b;
+  --c-danger-600: #db431f;
+  --c-danger-700: #b72915;
+  --c-danger-800: #93150d;
+  --c-danger-900: #7a0809;
+
+  --c-primary: var(--c-primary-500);
+  --c-info: var(--c-info-500);
+  --c-success: var(--c-success-500);
+  --c-danger: var(--c-danger-500);
+  --c-warning: var(--c-warning-500);
+
+  /* Change favorite color */
+  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+  --text-color: hsl(var(--hue-color), 8%, 45%);
+  --text-color-light: hsl(var(--hue-color), 8%, 65%);
+  --title-color: hsl(var(--hue-color), 8%, 15%);
+  --body-color: hsl(var(--hue-color), 60%, 99%);
+
+  /* 设置间距 */
+  --c-mg-0-25: 0.25rem;
+  --c-mg-0-75: 0.75rem;
+  --c-mg-1: 1rem;
+  --c-mg-2: 2rem;
+  --c-mg-2-5: 2.5rem;
+
+  /* 设置字体大小 */
+  --c-bigger-font-size: 6rem;
+  --c-big-font-size: 3rem;
+  --c-normal-font-size: 1rem;
+  --c-min-font-size: 0.875rem;
+  --c-smaller-font-size: 0.813rem;
+  --c-h1-font-size: 2.25rem;
+  --c-h2-font-size: 1.5rem;
+  --c-h3-font-size: 1.25rem;
+
+  /* 设置最大宽度 */
+  --c-maxwidth: 968px;
+
+  /* 设置内容区域最大宽度 */
+  --c-container-maxwidth: 768px;
+}

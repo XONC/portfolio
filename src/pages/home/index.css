@@ -1,0 +1,331 @@
+/* 顶部导航 */
+header {
+  width: 100vw;
+  height: 60px;
+  line-height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* 设置固定宽度，使用margin: auto 进行居中 */
+  max-width: var(--c-maxwidth);
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
+}
+
+header .logo {
+  font-family: "ZCOOL KuaiLe";
+  font-size: 36px;
+  color: var(--title-color);
+}
+
+header ul {
+  display: inline-flex;
+}
+
+.link-item {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+.link-item a {
+  color: var(--title-color);
+}
+.link-item.active a {
+  color: var(--c-primary);
+}
+
+.link-item:hover a,
+.link-item:hover .iconfont {
+  color: var(--c-primary);
+  cursor: pointer;
+}
+
+/* 主体部分 */
+main {
+}
+
+main section {
+  padding-top: 96px;
+}
+
+main section > * {
+  max-width: var(--c-container-maxwidth);
+  margin: 0 auto;
+}
+
+main section > h1.title {
+  text-align: center;
+  font-size: var(--c-h1-font-size);
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+main section > p.desc {
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+/* 个人介绍 */
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  position: relative;
+}
+
+.home h1 {
+  font-size: var(--c-big-font-size);
+  line-height: var(--c-big-font-size);
+  height: calc(1.5 * var(--c-big-font-size));
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+.home h3 {
+  font-size: var(--c-h3-font-size);
+  color: var(--text-color);
+  margin-bottom: var(--c-mg-0-75);
+}
+
+.home p {
+  color: var(--text-color);
+  margin-bottom: var(--c-mg-2);
+}
+.home button {
+  cursor: pointer;
+}
+
+.home .home__logo {
+  width: 320px;
+  height: 300px;
+}
+.home .home__logo img {
+  width: 80%;
+  object-fit: cover;
+}
+
+.home .link {
+  position: absolute;
+  top: var(--c-big-font-size);
+  left: calc((var(--c-container-maxwidth) - var(--c-maxwidth)) / 2 + 0.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 1rem;
+}
+
+.home .link span {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.home .link span:hover {
+  color: var(--c-primary);
+}
+
+.scroll_down {
+  display: block;
+  margin-top: calc(2 * var(--c-mg-2));
+  position: relative;
+  top: 0;
+
+  transition: top 0.3s linear;
+}
+.scroll_down:hover {
+  cursor: pointer;
+
+  top: 0.3rem;
+}
+.scroll_down span.arrow {
+  transform: rotateZ(0.6turn);
+}
+.scroll_down span:not(.text) {
+  color: var(--c-primary);
+}
+
+/* about */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about img {
+  width: 350px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.about .about__text {
+  width: 344px;
+}
+.about .about__text p {
+  margin-bottom: var(--c-mg-2-5);
+}
+.about .about__text__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about .about__text__list .about__text__item h2 {
+  color: var(--title-color);
+  font-weight: bold;
+  font-size: var(--c-h2-font-size);
+}
+
+/* skills */
+.skills .skills__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: var(--c-mg-2);
+}
+.skills .skills__title img,
+.skills .skills__title .iconfont {
+  margin-right: var(--c-mg-0-75);
+}
+.skills .skills__title .iconfont::before {
+  font-size: 2.3rem;
+  color: var(--c-primary);
+}
+.skills .skills__title .skills__title__text h3 {
+  color: var(--title-color);
+  font-size: var(--c-h3-font-size);
+  font-weight: bold;
+}
+
+.skills .svg-group {
+  padding-left: 2.7rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.skills .svg-group img {
+  margin-right: var(--c-mg-0-75);
+}
+
+/* portfolio */
+.portfolio .portfolio__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--c-mg-2);
+}
+.portfolio .portfolio__title h3 {
+  margin: 0 var(--c-mg-1);
+  cursor: pointer;
+}
+.portfolio .portfolio__title h3 * {
+  font-size: var(--c-h3-font-size);
+}
+.portfolio .portfolio__title h3 .iconfont {
+  margin-right: var(--c-mg-0-25);
+}
+.portfolio .portfolio__title h3.active * {
+  color: var(--c-primary);
+}
+
+.portfolio .portfolio__tree {
+  width: 384px;
+  margin: 0 auto;
+}
+.portfolio .portfolio__tree__node {
+  display: flex;
+  align-content: space-between;
+  align-items: flex-start;
+}
+.portfolio .portfolio__tree__node .node {
+  width: calc((384px - 0.8rem - var(--c-mg-2) * 2) / 2);
+  min-height: 2px;
+}
+.portfolio .portfolio__tree__node .node h3 {
+  font-size: var(--c-normal-font-size);
+  font-weight: normal;
+  color: var(--title-color);
+}
+.portfolio .portfolio__tree__node .node p {
+  font-size: var(--c-min-font-size);
+  margin-bottom: var(--c-mg-1);
+}
+.portfolio .portfolio__tree__node .node .date * {
+  font-size: var(--c-smaller-font-size);
+  color: var(--text-color-light);
+}
+.portfolio .portfolio__tree__node .portfolio__tree__node_dot {
+  width: 0.8rem;
+  height: 100%;
+  margin: 0 var(--c-mg-2);
+}
+
+.portfolio .portfolio__tree__node .portfolio__tree__node_dot .dot {
+  display: block;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: var(--c-primary);
+}
+
+.portfolio .portfolio__tree__node .portfolio__tree__node_dot .line {
+  display: block;
+  width: 2px;
+  height: 92px;
+  border-radius: 50px;
+  background-color: var(--c-primary);
+  margin: 0 auto;
+}
+.portfolio .portfolio__tree .portfolio__tree__node:last-child .line {
+  display: none;
+}
+
+/* contact */
+.contact .contact-item {
+  display: flex;
+  justify-content: flex-start;
+}
+.contact .iconfont {
+  color: var(--c-primary);
+  margin-right: var(--c-mg-0-75);
+}
+.contact h3 {
+  font-size: var(--c-h3-font-size);
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+footer {
+  display: block;
+  height: 150px;
+}
+
+#top {
+  position: fixed;
+  bottom: -3rem;
+  right: 2rem;
+  z-index: 2000;
+
+  transition: bottom 0.3s linear;
+}
+
+#top.active {
+  bottom: 6rem;
+}
+
+#top .iconfont {
+  margin: 0;
+}
+#top .iconfont::before {
+  font-size: 1.2rem;
+}
