@@ -2,6 +2,20 @@ const page = {
   containerList: [],
 };
 
+function changePortfolio(index, e) {
+  console.log(e.target);
+  const portfolio__title__items = [
+    ...document.querySelectorAll(".portfolio__title__item"),
+  ];
+  const portfolio__trees = [...document.querySelectorAll(".portfolio__tree")];
+  portfolio__title__items.forEach((element) =>
+    element.classList.remove("active")
+  );
+  portfolio__trees.forEach((element) => element.classList.remove("active"));
+  portfolio__title__items[index].classList.add("active");
+  portfolio__trees[index].classList.add("active");
+}
+
 window.addEventListener("load", () => {
   // 点亮导航
   page.containerList = [...document.querySelectorAll(".main-item.container")];

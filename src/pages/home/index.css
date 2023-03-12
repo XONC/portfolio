@@ -239,8 +239,13 @@ main section > p.desc {
 }
 
 .portfolio .portfolio__tree {
+  display: none;
   width: 384px;
   margin: 0 auto;
+}
+
+.portfolio .portfolio__tree.active {
+  display: block;
 }
 .portfolio .portfolio__tree__node {
   display: flex;

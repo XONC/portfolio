@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" href="../../assets/img/favicon.ico" />
     <link rel="stylesheet" href="../../assets/css/index.css" />
     <link rel="stylesheet" href="index.css" />
 
@@ -64,7 +64,7 @@
           </div>
 
           <div class="link">
-            <a href="">
+            <a href="https://github.com/XONC/portfolio" target="_blank">
               <span class="iconfont icon-github"></span>
             </a>
 
@@ -149,12 +149,20 @@
         <p class="desc">个人履历</p>
         <div class="portfolio">
           <div class="portfolio__title">
-            <h3 class="active">
+            <h3
+              class="portfolio__title__item active"
+              onclick="changePortfolio(0,event)"
+            >
               <span class="iconfont icon-gongzuo"></span><span>工作</span>
             </h3>
-            <h3><span class="iconfont icon-jiaoyu"></span><span>教育</span></h3>
+            <h3
+              class="portfolio__title__item"
+              onclick="changePortfolio(1,event)"
+            >
+              <span class="iconfont icon-jiaoyu"></span><span>教育</span>
+            </h3>
           </div>
-          <div class="portfolio__tree">
+          <div class="portfolio__tree active">
             <div class="portfolio__tree__node">
               <div class="node">
                 <h3>前端工程师</h3>
@@ -184,6 +192,24 @@
                   <span>2022.01 - 2023.01 </span>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="portfolio__tree">
+            <div class="portfolio__tree__node">
+              <div class="node">
+                <h3>网络工程</h3>
+                <p>吉林建筑科技学院</p>
+                <div class="date">
+                  <span class="iconfont icon-rili"></span>
+                  <span>2016.06 - 2020.06</span>
+                </div>
+              </div>
+              <div class="portfolio__tree__node_dot">
+                <span class="dot"></span>
+                <span class="line"></span>
+              </div>
+              <div class="node"></div>
             </div>
           </div>
         </div>
