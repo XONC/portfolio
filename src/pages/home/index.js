@@ -2,8 +2,19 @@ const page = {
   containerList: [],
 };
 
+function changeTheme(index) {
+  const theme_btns = [...document.querySelectorAll(".theme-btn")];
+  console.log(theme_btns[index]);
+
+  theme_btns.forEach((element) => element.classList.add("active"));
+
+  theme_btns[index].classList.remove("active");
+
+  const body = document.querySelector("body");
+  body.classList.toggle("dark-theme");
+}
+
 function changePortfolio(index, e) {
-  console.log(e.target);
   const portfolio__title__items = [
     ...document.querySelectorAll(".portfolio__title__item"),
   ];

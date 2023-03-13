@@ -31,7 +31,7 @@ header ul {
 }
 
 .link-item {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: bold;
   margin-right: 20px;
 }
@@ -46,6 +46,13 @@ header ul {
 .link-item:hover .iconfont {
   color: var(--c-primary);
   cursor: pointer;
+}
+
+.link-item .theme-btn {
+  display: none;
+}
+.link-item .theme-btn.active {
+  display: block;
 }
 
 /* 主体部分 */
