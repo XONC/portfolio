@@ -1,6 +1,18 @@
 const page = {
   containerList: [],
+  lang: "cn",
 };
+
+function showLinkList() {
+  const nav_link = document.querySelector("#nav_link");
+  nav_link.classList.toggle("active");
+}
+
+function translateText() {
+  const cn_en = document.querySelector(".cn-en");
+  page.lang = page.lang === "cn" ? "en" : "cn";
+  cn_en.innerHTML = page.lang === "cn" ? "中/英" : "英/中";
+}
 
 function changeTheme(index) {
   const theme_btns = [...document.querySelectorAll(".theme-btn")];

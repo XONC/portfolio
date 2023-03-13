@@ -55,6 +55,10 @@ header ul {
   display: block;
 }
 
+.hid {
+  display: none;
+}
+
 /* 主体部分 */
 main {
 }
@@ -219,6 +223,7 @@ main section > p.desc {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
 }
 .skills .svg-group img {
   margin-right: var(--c-mg-0-75);
@@ -340,4 +345,97 @@ footer {
 }
 #top .iconfont::before {
   font-size: 1.2rem;
+}
+
+/* 响应式部分 */
+@media screen and (max-width: 750px) {
+  header {
+  }
+  header .wrapper {
+    padding: 0 var(--c-mg-2);
+    box-shadow: 0 -1px 4px rgb(0 0 0 / 15%);
+    position: relative;
+    z-index: 999;
+    background-color: var(--body-color);
+  }
+
+  header .wrapper .link {
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    flex-wrap: wrap;
+    border-radius: 0 0 1.5rem 1.5rem;
+
+    box-shadow: 0 2px 4px rgb(0 0 0 / 15%);
+    /* padding: var(--c-mg-2) var(--c-mg-2); */
+
+    transition: top 0.3s linear;
+  }
+
+  #nav_link.active {
+    top: 60px;
+  }
+
+  .link-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: calc(100vw / 3);
+    margin-right: 0;
+    margin-bottom: var(--c-mg-2);
+  }
+  .link-item * {
+    text-align: center;
+  }
+
+  .hid {
+    display: block;
+  }
+
+  .link-item.theme-link {
+    display: none;
+  }
+
+  .home {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .home .home__text h3,
+  .home .home__text p,
+  .home .home__text .contact_me {
+    text-align: center;
+  }
+  .home .home__logo_container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: var(--c-mg-2);
+  }
+  .home .home__logo {
+    text-align: center;
+    width: 220px;
+    height: 240px;
+  }
+  .scroll_down {
+    text-align: center;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+  .about img {
+    margin-bottom: var(--c-mg-2);
+  }
+  .about .download_cv {
+    text-align: center;
+  }
+
+  .skills .skills__title {
+    justify-content: center;
+  }
+
+  .contact .contact-item {
+    justify-content: center;
+  }
 }

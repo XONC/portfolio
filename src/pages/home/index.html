@@ -17,28 +17,49 @@
       <div class="wrapper">
         <a class="logo" href="#/">解路平的主页</a>
 
-        <ul class="link">
+        <span
+          class="iconfont icon-danlieliebiao list hid"
+          onclick="showLinkList()"
+        ></span>
+
+        <ul id="nav_link" class="link">
           <li class="nav link-item">
-            <a href="#home" i18n="home">Home</a>
+            <a href="#home">
+              <span class="iconfont icon-home hid"></span>
+              <span i18n="home">Home</span>
+            </a>
           </li>
           <li class="nav link-item">
-            <a href="#about" i18n="about">About</a>
+            <a href="#about">
+              <span class="iconfont icon-caidanguanyuwo hid"></span>
+              <span i18n="about">About</span>
+            </a>
           </li>
           <li class="nav link-item">
-            <a href="#skills" i18n="skills">Skills</a>
+            <a href="#skills">
+              <span class="iconfont icon-jinengliang hid"></span>
+              <span i18n="skills">Skills</span>
+            </a>
           </li>
           <li class="nav link-item">
-            <a href="#portfolio" i18n="portfolio">Portfolio</a>
+            <a href="#portfolio">
+              <span class="iconfont icon-jianli hid"></span>
+              <span i18n="portfolio">Portfolio</span>
+            </a>
           </li>
           <li class="nav link-item">
-            <a href="#contact" i18n="contact">Contact</a>
+            <a href="#contact">
+              <span class="iconfont icon-lianxiwomen hid"></span>
+              <span i18n="contact">Contact</span>
+            </a>
           </li>
 
-          <li class="link-item">
-            <span id="translate" class="iconfont icon-fanyi"></span>
+          <li id="translate" class="link-item" onclick="translateText(1)">
+            <span class="iconfont icon-fanyi"></span>
+            <span class="cn-en hid">中/英</span>
           </li>
 
-          <li class="link-item">
+          <li class="link-item theme-link">
             <span
               class="iconfont icon-yueliang theme-btn active"
               onclick="changeTheme(0)"
@@ -61,21 +82,25 @@
             <h3 i18n="home__subtitle">前端工程师</h3>
             <p i18n="home__description">热爱动漫，游戏，编程。</p>
             <!-- <button class="primary large">与我联系</button> -->
-            <a class="button primary large" href="#contact">
-              <span i18n="home__contact">与我联系</span>
-              <span class="iconfont icon-lianxiwomen"></span>
-            </a>
+            <div class="contact_me">
+              <a class="button primary large" href="#contact">
+                <span i18n="home__contact">与我联系</span>
+                <span class="iconfont icon-lianxiwomen"></span>
+              </a>
+            </div>
           </div>
-          <div class="home__logo">
-            <img src="../../assets/img/svg/logo.svg" alt="" />
-          </div>
+          <div class="home__logo_container">
+            <div class="home__logo">
+              <img src="../../assets/img/svg/logo.svg" alt="" />
+            </div>
 
-          <div class="link">
-            <a href="https://github.com/XONC/portfolio" target="_blank">
-              <span class="iconfont icon-github"></span>
-            </a>
+            <div class="link">
+              <a href="https://github.com/XONC/portfolio" target="_blank">
+                <span class="iconfont icon-github"></span>
+              </a>
 
-            <!-- <span class="iconfont icon-gitee-fill-round"></span> -->
+              <!-- <span class="iconfont icon-gitee-fill-round"></span> -->
+            </div>
           </div>
         </div>
         <a href="#about" class="scroll_down">
@@ -110,14 +135,16 @@
               </div>
             </div>
             <!-- <button class="primary large">查看简历</button> -->
-            <a
-              class="button primary large"
-              href="../../assets/pdf/jianli.pdf"
-              download="简历.pdf"
-            >
-              <span i18n="download">查看简历</span>
-              <span class="iconfont icon-xiazai"></span>
-            </a>
+            <div class="download_cv">
+              <a
+                class="button primary large"
+                href="../../assets/pdf/jianli.pdf"
+                download="简历.pdf"
+              >
+                <span i18n="download">查看简历</span>
+                <span class="iconfont icon-xiazai"></span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
