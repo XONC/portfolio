@@ -19,23 +19,23 @@
 
         <ul class="link">
           <li class="nav link-item">
-            <a href="#home">Home</a>
+            <a href="#home" i18n="home">Home</a>
           </li>
           <li class="nav link-item">
-            <a href="#about">About</a>
+            <a href="#about" i18n="about">About</a>
           </li>
           <li class="nav link-item">
-            <a href="#skills">Skills</a>
+            <a href="#skills" i18n="skills">Skills</a>
           </li>
           <li class="nav link-item">
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio" i18n="portfolio">Portfolio</a>
           </li>
           <li class="nav link-item">
-            <a href="#contact">Contact</a>
+            <a href="#contact" i18n="contact">Contact</a>
           </li>
 
           <li class="link-item">
-            <span class="iconfont icon-fanyi"></span>
+            <span id="translate" class="iconfont icon-fanyi"></span>
           </li>
 
           <li class="link-item">
@@ -50,12 +50,12 @@
       <section id="home" class="main-item container">
         <div class="home">
           <div class="home__text">
-            <h1>Hi，我是解璐平</h1>
-            <h3>前端工程师</h3>
-            <p>热爱动漫，游戏，编程</p>
+            <h1 i18n="home__title">Hi，我是解璐平</h1>
+            <h3 i18n="home__subtitle">前端工程师</h3>
+            <p i18n="home__description">热爱动漫，游戏，编程。</p>
             <!-- <button class="primary large">与我联系</button> -->
             <a class="button primary large" href="#contact">
-              与我联系
+              <span i18n="home__contact">与我联系</span>
               <span class="iconfont icon-lianxiwomen"></span>
             </a>
           </div>
@@ -73,33 +73,33 @@
         </div>
         <a href="#about" class="scroll_down">
           <span class="iconfont icon-shubiao"></span>
-          <span class="text">往下滑</span>
+          <span class="text" i18n="home__scroll-name">往下滑</span>
           <span class="iconfont icon-paixu arrow"></span>
         </a>
       </section>
 
       <!-- about -->
       <section id="about" class="main-item container">
-        <h1 class="title">关于我</h1>
-        <p class="desc">简单介绍</p>
+        <h1 class="title" i18n="about__title">关于我</h1>
+        <p class="desc" i18n="about__subtitle">简单介绍</p>
         <div class="about">
           <img src="../../assets/img/about.png" alt="" />
           <div class="about__text">
-            <p>
+            <p i18n="about__description">
               Web开发人员，具有丰富的知识和2年的经验，从事Web技术，提供高质量的工作。
             </p>
             <div class="about__text__list">
               <div class="about__text__item">
-                <h2>2年</h2>
-                <p>工作经验</p>
+                <h2 i18n="about__info-name_1">2年</h2>
+                <p i18n="about__info-name1">工作经验</p>
               </div>
               <div class="about__text__item">
-                <h2>4个</h2>
-                <p>完整项目</p>
+                <h2 i18n="about__info-name_2">4个</h2>
+                <p i18n="about__info-name2">完整项目</p>
               </div>
               <div class="about__text__item">
-                <h2>2家</h2>
-                <p>公司任职</p>
+                <h2 i18n="about__info-name_3">2家</h2>
+                <p i18n="about__info-name3">公司任职</p>
               </div>
             </div>
             <!-- <button class="primary large">查看简历</button> -->
@@ -108,7 +108,7 @@
               href="../../assets/pdf/jianli.pdf"
               download="简历.pdf"
             >
-              查看简历
+              <span i18n="download">查看简历</span>
               <span class="iconfont icon-xiazai"></span>
             </a>
           </div>
@@ -117,14 +117,14 @@
 
       <!-- Skills -->
       <section id="skills" class="main-item container">
-        <h1 class="title">技能</h1>
-        <p class="desc">技术水平</p>
+        <h1 class="title" i18n="skills__title">技能</h1>
+        <p class="desc" i18n="skills__subtitle">技术水平</p>
         <div class="skills">
           <div class="skills__title">
             <span class="iconfont icon-_qianduankaifa"></span>
             <div class="skills__title__text">
-              <h3>前端工程师</h3>
-              <p>2年经验</p>
+              <h3 i18n="skills__title2">前端工程师</h3>
+              <p i18n="skills__years2">2年工作经验</p>
             </div>
           </div>
           <div class="svg-group">
@@ -145,21 +145,23 @@
 
       <!-- portfolio -->
       <section id="portfolio" class="main-item container">
-        <h1 class="title">资历</h1>
-        <p class="desc">个人履历</p>
+        <h1 class="title" i18n="qualification__title">资历</h1>
+        <p class="desc" i18n="qualification__subtitle">个人履历</p>
         <div class="portfolio">
           <div class="portfolio__title">
             <h3
               class="portfolio__title__item active"
               onclick="changePortfolio(0,event)"
             >
-              <span class="iconfont icon-gongzuo"></span><span>工作</span>
+              <span class="iconfont icon-gongzuo"></span
+              ><span i18n="work">工作</span>
             </h3>
             <h3
               class="portfolio__title__item"
               onclick="changePortfolio(1,event)"
             >
-              <span class="iconfont icon-jiaoyu"></span><span>教育</span>
+              <span class="iconfont icon-jiaoyu"></span
+              ><span i18n="education">教育</span>
             </h3>
           </div>
           <div class="portfolio__tree active">
@@ -217,13 +219,13 @@
 
       <!-- contact -->
       <section id="contact" class="main-item container">
-        <h1 class="title">联系方式</h1>
-        <p class="desc">与我联系</p>
+        <h1 class="title" i18n="contact__title">联系方式</h1>
+        <p class="desc" i18n="contact__subtitle">与我联系</p>
         <div class="contact">
           <div class="contact-item">
             <span class="iconfont icon-youjian"></span>
             <div>
-              <h3>电子邮箱</h3>
+              <h3 i18n="email">电子邮箱</h3>
               <p>x1612239135@163.com</p>
             </div>
           </div>
@@ -237,6 +239,9 @@
       <span class="iconfont icon-xiangshang"></span>
     </a>
   </body>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="jquery.i18n.min.js"></script>
+  <script src="cn-en-translate.js"></script>
 
   <script src="index.js"></script>
 </html>
