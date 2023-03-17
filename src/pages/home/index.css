@@ -307,6 +307,59 @@ main section > p.desc {
   display: none;
 }
 
+/* tool */
+.tool .tool-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 2rem;
+  line-height: 2rem;
+  font-size: var(--c-h3-font-size);
+  border-radius: 4px;
+  background-color: #ffffff;
+
+  overflow: hidden;
+
+  transition: box-shadow 0.3s linear;
+}
+.tool .tool-item * {
+  background-color: #ffffff;
+}
+.tool .tool-item a {
+  flex: 1;
+  display: inline-block;
+
+  margin: 0 var(--c-mg-1);
+}
+.tool .tool-item .mark {
+  display: inline-block;
+  width: var(--c-mg-0-75);
+  height: 100%;
+}
+.tool .tool-item:nth-child(1n) .mark {
+  background-color: var(--c-primary);
+}
+.tool .tool-item:nth-child(2n) .mark {
+  background-color: var(--c-danger);
+}
+.tool .tool-item:nth-child(3n) .mark {
+  background-color: var(--c-success);
+}
+.tool .tool-item:nth-child(4n) .mark {
+  background-color: var(--c-warning);
+}
+.tool .tool-item:nth-child(5n) .mark {
+  background-color: var(--c-info);
+}
+.tool .tool-item:hover {
+  cursor: pointer;
+  /* box-shadow: var(--c-box-shadow); */
+}
+.tool .tool-item:hover a,
+.tool .tool-item:hover .iconfont::before {
+  color: var(--c-primary);
+}
+
 /* contact */
 .contact .contact-item {
   display: flex;
